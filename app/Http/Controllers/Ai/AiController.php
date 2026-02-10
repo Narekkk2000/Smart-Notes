@@ -11,7 +11,7 @@ use App\Ai\Services\NoteAiService;
 class AiController extends Controller
 {
 
-    public function chat(Request $request, NoteAiService $service)
+    public function process(Request $request, NoteAiService $service)
     {
         $request->validate([
             'prompt' => ['required', 'string'],
